@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        Register a Peer with the network
+        <form action="{{url_for('addpeer')}}" method="post">
+            <input type="text" name="ip" placeholder="ipaddress" id="">
+            <input type="number" name="port" id="">
+            <input type="submit">
+        </form>
+    </body>
+</html>
+{% endblock content %}

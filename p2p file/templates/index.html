@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+<body>
+    <h1>P2P File Transfer</h1>
+    <form action="/download" method="get">
+        <label for="filename">Enter Filename:</label>
+        <input type="text" id="filename" name="filename">
+        <input type="submit" value="Download">
+    </form>
+</body>
+</html>
+{% endblock content%} 
